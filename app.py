@@ -16,4 +16,4 @@ question = st.text_input("Въпрос:")
 if question:
     with st.spinner("Мисля..."):
         response = agent.ask(question)
-        st.write(response)
+        st.write(response.final_answer)
